@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { BusinessChallenges } from "@/components/sections/BusinessChallenges";
 import { Solutions } from "@/components/sections/Solutions";
+import { Industries } from "@/components/sections/Industries";
+import { TechnologyInAction } from "@/components/sections/TechnologyInAction";
 
 export const metadata: Metadata = {
   title: "Stinet Digital - Transform the Way Your Business Works",
@@ -15,6 +17,8 @@ export default function Home() {
       <Hero />
       <BusinessChallenges />
       <Solutions />
+      <Industries />
+      <TechnologyInAction />
     </>
   );
 }

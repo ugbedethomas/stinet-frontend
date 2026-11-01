@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="CONSTRUCTION placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12213A"/>
+      <stop offset="100%" stop-color="#0B1628"/>
+    </linearGradient>
+    <pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1C304D" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <rect width="800" height="600" fill="url(#gr)" opacity="0.5"/>
+  <text x="400" y="290" text-anchor="middle" fill="#D9A928" font-family="system-ui, sans-serif" font-size="18" font-weight="600" letter-spacing="3">CONSTRUCTION</text>
+  <text x="400" y="320" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" letter-spacing="2" opacity="0.7">PROJECTS & MATERIALS</text>
+  <text x="400" y="360" text-anchor="middle" fill="#64748B" font-family="system-ui, sans-serif" font-size="10" letter-spacing="1">Placeholder image</text>
+</svg>
