@@ -12,7 +12,7 @@ type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
 };
 
 export const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select(
-  { id, label, error, hint, options, placeholder, required, className = "", ...rest },
+  { id, label, error, hint, options, placeholder, required, value, className = "", ...rest },
   ref,
 ) {
   const describedBy = [
@@ -54,7 +54,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select
         required={required}
         aria-invalid={error ? true : undefined}
         aria-describedby={describedBy}
-        defaultValue={placeholder ? "" : undefined}
+        defaultValue={value === undefined && placeholder ? "" : undefined}
         className={`${baseClasses} ${stateClasses} ${className}`.trim()}
         {...rest}
       >

@@ -120,9 +120,11 @@ export function Button(props: ButtonProps) {
     type = "button",
     disabled,
     loading: _restLoading,
+    fullWidth: _restFullWidth,
     ...rest
   } = props as AsButton;
   void _restLoading;
+  void _restFullWidth;
 
   return (
     <button
