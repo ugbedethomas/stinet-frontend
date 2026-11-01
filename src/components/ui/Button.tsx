@@ -117,12 +117,6 @@ export function Button(props: ButtonProps) {
   }
 
   const {
-    variant: _v,
-    size: _s,
-    loading: _l,
-    fullWidth: _f,
-    children: _c,
-    className: _cn,
     type = "button",
     disabled,
     ...rest

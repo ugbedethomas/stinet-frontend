@@ -5,9 +5,21 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  // Override default ignores of eslint-config-next.
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    rules: {
+      "jsx-a11y/anchor-is-valid": "error",
+      "jsx-a11y/aria-props": "error",
+      "jsx-a11y/aria-role": "error",
+      "jsx-a11y/img-redundant-alt": "error",
+      "jsx-a11y/label-has-associated-control": "error",
+      "jsx-a11y/no-autofocus": "error",
+      "jsx-a11y/no-redundant-roles": "error",
+      "jsx-a11y/role-has-required-aria-props": "error",
+      "jsx-a11y/role-supports-aria-props": "error",
+    },
+  },
   globalIgnores([
-    // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
     "build/**",
