@@ -43,10 +43,12 @@
   --color-error:   #DC2626;
   --color-info:    #2563EB;
 
-  /* ===== Typography families ===== */
-  --font-heading: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-body:    "Inter",   ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-editorial: "Merriweather", ui-serif, Georgia, "Times New Roman", serif;
+  /* ===== Typography families =====
+     Values reference the next/font CSS variables injected by layout.tsx.
+     The name fallbacks remain so the CSS still works before next/font hydrates. */
+  --font-heading: var(--font-manrope, "Manrope"), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body:    var(--font-inter, "Inter"),    ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-editorial: var(--font-merriweather, "Merriweather"), ui-serif, Georgia, "Times New Roman", serif;
 
   /* ===== Typography scale (size / line-height) ===== */
   --text-display-xl:   64px;
