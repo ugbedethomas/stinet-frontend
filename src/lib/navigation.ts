@@ -104,3 +104,65 @@ export const primaryCta = {
   label: "Book a Consultation",
   href: "/consultation",
 };
+
+export type FooterLinkGroup = {
+  label: string;
+  links: NavLink[];
+};
+
+export const footerLinkGroups: FooterLinkGroup[] = [
+  {
+    label: "Solutions",
+    links: [
+      { label: "Business Systems & ERP", href: "/solutions/business-systems" },
+      { label: "AI & Automation", href: "/solutions/ai-automation" },
+      { label: "Digital Platforms", href: "/solutions/digital-platforms" },
+      { label: "Digital Growth", href: "/solutions/digital-growth" },
+    ],
+  },
+  {
+    label: "Industries",
+    links: [
+      { label: "Manufacturing", href: "/industries/manufacturing" },
+      { label: "Distribution", href: "/industries/distribution" },
+      { label: "Retail", href: "/industries/retail" },
+      { label: "Professional Services", href: "/industries/professional-services" },
+      { label: "Construction", href: "/industries/construction" },
+      { label: "Energy", href: "/industries/energy" },
+    ],
+  },
+  {
+    label: "Company",
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Our Method", href: "/our-method" },
+      { label: "Our Work", href: "/work" },
+      { label: "Insights", href: "/insights" },
+      { label: "Contact", href: "/contact" },
+    ],
+  },
+  {
+    label: "Learning & Connect",
+    links: [
+      { label: "Stinet Academy", href: "/academy" },
+      { label: "Courses", href: "/academy/courses" },
+      { label: "Corporate Training", href: "/academy/corporate-training" },
+      { label: "Events", href: "/events" },
+      { label: "Book a Consultation", href: "/consultation" },
+    ],
+  },
+];
+
+export const legalLinks: NavLink[] = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
+  { label: "Refund Policy", href: "/refund-policy" },
+  { label: "Accessibility", href: "/accessibility" },
+];
+
+export const footerTagline = {
+  eyebrow: "Your Business Transformation Partner",
+  description:
+    "We help businesses modernise operations, connect systems and unlock new opportunities through practical software, intelligent automation and digital innovation.",
+};
