@@ -119,8 +119,10 @@ export function Button(props: ButtonProps) {
   const {
     type = "button",
     disabled,
+    loading: _restLoading,
     ...rest
   } = props as AsButton;
+  void _restLoading;
 
   return (
     <button
