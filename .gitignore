@@ -27,3 +27,6 @@ Thumbs.db
 
 # Coverage
 coverage/
+
+# Next.js generated
+next-env.d.ts
