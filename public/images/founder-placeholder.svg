@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" role="img" aria-label="FOUNDER PORTRAIT placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C304D"/>
+      <stop offset="100%" stop-color="#0B1628"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1200" fill="url(#g)"/>
+  <circle cx="500" cy="480" r="140" fill="#2B4363" opacity="0.6"/>
+  <path d="M 260 980 Q 260 720 500 720 Q 740 720 740 980 Z" fill="#2B4363" opacity="0.6"/>
+  <text x="500" y="1120" text-anchor="middle" fill="#D9A928" font-family="system-ui, sans-serif" font-size="16" font-weight="600" letter-spacing="3">FOUNDER PORTRAIT</text>
+  <text x="500" y="1150" text-anchor="middle" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" letter-spacing="1">Awaiting approved photograph</text>
+</svg>

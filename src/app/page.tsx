@@ -6,6 +6,8 @@ import { Industries } from "@/components/sections/Industries";
 import { TechnologyInAction } from "@/components/sections/TechnologyInAction";
 import { OurWork } from "@/components/sections/OurWork";
 import { OurMethod } from "@/components/sections/OurMethod";
+import { About } from "@/components/sections/About";
+import { Insights } from "@/components/sections/Insights";
 
 export const metadata: Metadata = {
   title: "Stinet Digital - Transform the Way Your Business Works",
@@ -23,6 +25,8 @@ export default function Home() {
       <TechnologyInAction />
       <OurWork />
       <OurMethod />
+      <About />
+      <Insights />
     </>
   );
 }
