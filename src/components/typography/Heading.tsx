@@ -16,6 +16,7 @@ type HeadingProps = {
   as?: HeadingLevel;
   children: ReactNode;
   className?: string;
+  id?: string;
 };
 
 const variantClasses: Record<HeadingVariant, string> = {
@@ -34,6 +35,7 @@ export function Heading({
   as,
   children,
   className = "",
+  id,
 }: HeadingProps) {
   const Tag = (as ?? level) as ElementType;
   const resolvedVariant = variant ?? (level as HeadingVariant);
@@ -45,5 +47,9 @@ export function Heading({
     .filter(Boolean)
     .join(" ");
 
-  return <Tag className={classes}>{children}</Tag>;
+  return (
+    <Tag className={classes} id={id}>
+      {children}
+    </Tag>
+  );
 }
